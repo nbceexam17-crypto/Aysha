@@ -1,33 +1,6 @@
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-}
-
-header{
-    background:#0077b6;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:10px;
+.logo h2{
+    font-size:45px;
     font-weight:bold;
-}
-
-.hero{
-    text-align:center;
-    padding:100px 20px;
-    background:#caf0f8;
-}
-
-.btn{
-    display:inline-block;
-    padding:12px 25px;
-    background:#0077b6;
     color:white;
-    text-decoration:none;
-    border-radius:5px;
+    letter-spacing:2px;
 }
