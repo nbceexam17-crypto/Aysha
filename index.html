@@ -3,10 +3,158 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Aysha Art</title>
 
-<link rel="stylesheet" href="css/style.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Header */
+
+header{
+    background:#111;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:90px;
+    margin-right:20px;
+}
+
+.logo h1{
+    font-size:72px;
+    color:white;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#ff9800;
+    padding:12px 25px;
+    border-radius:8px;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#e68900;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80vh;
+}
+
+.hero-box{
+    background:#666;
+    color:white;
+    width:60%;
+    padding:60px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.hero-box h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-box p{
+    font-size:28px;
+    margin-bottom:30px;
+}
+
+.hero-box button{
+    background:#ff9800;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    border-radius:10px;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero-box button:hover{
+    background:#e68900;
+}
+
+/* Footer */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:18px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+.logo{
+    flex-direction:column;
+}
+
+.logo img{
+    margin-bottom:15px;
+}
+
+.logo h1{
+    font-size:45px;
+}
+
+nav{
+    margin-top:20px;
+}
+
+.hero-box{
+    width:90%;
+    padding:30px;
+}
+
+.hero-box h2{
+    font-size:40px;
+}
+
+.hero-box p{
+    font-size:20px;
+}
+}
+</style>
 
 </head>
 <body>
@@ -14,65 +162,30 @@
 <header>
 
 <div class="logo">
-<h2>🎨 Aysha Art</h2>
+<img src="images/logo.png" alt="Logo">
+<h1>Aysha Art</h1>
 </div>
 
 <nav>
-
-<a href="index.html">Home</a>
-
-<a href="gallery.html">Gallery</a>
-
-<a href="upload.html">Upload</a>
-
-<a href="about.html">About</a>
-
-<a href="contact.html">Contact</a>
-
-<a class="login" href="admin-login.html">Admin Login</a>
-
+<a href="student-login.html">Student Login</a>
+<a href="admin-login.html">Admin Login</a>
 </nav>
 
 </header>
 
 <section class="hero">
 
-<div class="hero-text">
+<div class="hero-box">
 
-<h1>Welcome to Aysha Art</h1>
+<h2>Welcome to Aysha Art</h2>
 
 <p>
 Discover beautiful paintings, digital art and creative designs.
 </p>
 
-<a href="gallery.html" class="btn">
+<button onclick="window.location.href='gallery.html'">
 View Gallery
-</a>
-
-</div>
-
-</section>
-
-<section class="featured">
-
-<h2>Featured Art</h2>
-
-<div class="gallery">
-
-<div class="card">
-<img src="images/artworks/art1.jpg">
-<h3>Beautiful Nature</h3>
-</div>
-
-<div class="card">
-<img src="images/artworks/art2.jpg">
-<h3>Abstract Painting</h3>
-</div>
-
-<div class="card">
-<img src="images/artworks/art3.jpg">
-<h3>Modern Design</h3>
-</div>
+</button>
 
 </div>
 
@@ -80,13 +193,9 @@ View Gallery
 
 <footer>
 
-<p>
-© 2026 Aysha Art. All Rights Reserved.
-</p>
+<p>© 2026 Aysha Art. All Rights Reserved.</p>
 
 </footer>
-
-<script src="js/script.js"></script>
 
 </body>
 </html>
